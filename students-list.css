@@ -27,3 +27,27 @@ h1 {
 .user-email{
     width: 200px;
 }
+
+.user-gender{
+    width: 70px;
+}
+
+.user-phone-number{
+    width: 110px;
+}
+
+.user-password{
+    width: 120px;
+}
+
+.user-collage{
+    width: 110px;
+}
+
+.user-course{
+    width: 120px;
+}
+
+.user-address{
+    width: 150px;
+}
