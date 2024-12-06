@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="./registration-form.css"/>
+    
+</head>
+<body>
+    <div class="Student-register-form">
+        <h1 class="name">Registration Form</h1>
+        <form action="">
+            <table>
+                <tr>
+                    <td>
+                        <label for="">First Name:</label><br><br>
+                        <input type="text" placeholder="Enter first name"><br> <br>
+                    </td>
+                    <td class="Student">
+                        <label for="">Sur Name:</label><br> <br>
+                        <input type="text" placeholder="Enter surname"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Email:</label><br><br>
+                        <input type="text" placeholder="Enter your email"><br><br>
+                    </td>
+                    <td class="Student">
+                        <label for="gender">Gender:</label><br><br>
+                        <input type="radio" id="male"   name="gender" value="male">
+                        &nbsp;
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="female">
+                        &nbsp;
+                        <label for="female">Female</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Password:</label><br><br>
+                        <input type="password" placeholder="Enter password"><br><br>
+                    </td>
+                    <td class="Student">
+                        <label for="">Confirm Password:</label><br><br>
+                        <input type="password" placeholder="Enter confirm password"><br><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Course:</label><br><br>
+                        <select name="course" id="select">
+                            <option value="">choose option</option>
+                            <option value="">Btech</option>
+                            <option value="">Inter</option>
+                            <option value="">Diploma</option>
+                        </select><br><br>
+                    </td>
+                    <td class="Student">
+                        <label for="">College Name:</label><br><br>
+                        <textarea name="college name" id="colleege-name" rows="2" cols="20"></textarea><br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="">Address:</label><br><br>
+                        <textarea name="Address" id="Address" rows="3" cols="28"></textarea><br><br>
+                    </td>
+                </tr>
+            </table>
+                <label for="">Phone Number:</label><br><br>
+                <input type="tel" placeholder="Enter phone number"><br><br>
+                <input type="submit" value="Register">
+        </form>
+    </div>
+</body>
+</html>

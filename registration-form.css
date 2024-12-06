@@ -1,0 +1,70 @@
+body{
+    background-image: url('background.jpg');
+}
+.Student-register-form{
+    margin-left: 200px;
+    margin-right: 200px;
+    margin-top: 50px;
+    font-size: 15px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.2);
+    padding-left: 50px;
+    background-color: aliceblue;
+    padding-bottom: 20px;
+}
+.name{
+    text-align: center;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+
+.Student{
+    padding-left: 40px;
+}
+
+textarea{
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.2);
+}
+
+select{
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.2);
+}
+
+input{
+    border-radius: 5px;
+    font-size: 15px;
+    padding: 7px;
+    box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.2);
+
+}
+
+input[type=submit]
+{
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px 0px rgb(0,0,0,0.2);
+    margin-bottom: 20px;
+    padding-right: 12px;
+    padding-left: 12px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 15px;
+    background-color: #321fb9 ;
+    justify-self: center;
+    display: flex;
+    flex-direction: column;
+    color: #FFFFFF;
+}
+
+label{
+    font-size: 18px;
+}
