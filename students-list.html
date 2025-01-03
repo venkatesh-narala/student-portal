@@ -1,72 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Students list</title>
-    <link rel="stylesheet" href="./students-list.css"/>
-</head>
-<body>
-    <h1>Students List</h1>
-    <table  width="450" height="300" align="center">
-        <tr>
-            <th rowspan="1" colspan="22"></th>
-        </tr>
-        <tr class="table-data-row table-header-row">
-            <td class="serial-no">#</td>
-            <td class="user-name">Student name</td>
-            <td class="user-email">Email</td>
-            <td class="user-gender">Gender</td>
-            <td class="user-phone-number">Phone number</td>
-            <td class="user-password">Password</td>
-            <td class="user-collage">Collage</td>
-            <td class="user-course">Course</td>
-            <td class="user-address">Address</td>
-        </tr>
-        <tr class="table-data-row" >
-            <td class="serial-no">1</td>
-            <td class="user-name">nani</td>
-            <td class="user-email">venkateshnarala66@gmail.com</td>
-            <td class="user-gender">male</td>
-            <td class="user-phone-number">7997543478</td>
-            <td class="user-password">venkatesh@123</td>
-            <td class="user-collage">kiet</td>
-            <td class="user-course">diploma-cse</td>
-            <td class="user-address">brahmapuri</td>
-        </tr>
-        <tr class="table-data-row" >
-            <td class="serial-no">1</td>
-            <td class="user-name">nani</td>
-            <td class="user-email">venkateshnarala66@gmail.com</td>
-            <td class="user-gender">male</td>
-            <td class="user-phone-number">7997543478</td>
-            <td class="user-password">venkatesh@123</td>
-            <td class="user-collage">kiet</td>
-            <td class="user-course">diploma-cse</td>
-            <td class="user-address">brahmapuri</td>
-        </tr>
-        <tr class="table-data-row" >
-            <td class="serial-no">1</td>
-            <td class="user-name">nani</td>
-            <td class="user-email">venkateshnarala66@gmail.com</td>
-            <td class="user-gender">male</td>
-            <td class="user-phone-number">7997543478</td>
-            <td class="user-password">venkatesh@123</td>
-            <td class="user-collage">kiet</td>
-            <td class="user-course">diploma-cse</td>
-            <td class="user-address">brahmapuri</td>
-        </tr>
-        <tr class="table-data-row" >
-            <td class="serial-no">1</td>
-            <td class="user-name">nani</td>
-            <td class="user-email">venkateshnarala66@gmail.com</td>
-            <td class="user-gender">male</td>
-            <td class="user-phone-number">7997543478</td>
-            <td class="user-password">venkatesh@123</td>
-            <td class="user-collage">kiet</td>
-            <td class="user-course">diploma-cse</td>
-            <td class="user-address">brahmapuri</td>
-        </tr>
-    </table>
-</body>
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Students list</title>
+		<link rel="stylesheet" href="./students-list.css" />
+		<script defer src="students-list.js"></script>
+	</head>
+	<body>
+		<h1>Students List</h1>
+		<table width="450" height="300" align="center">
+			<thead>
+				<tr>
+					<th rowspan="1" colspan="22"></th>
+				</tr>
+				<tr class="table-data-row table-header-row">
+					<td class="serial-no">#</td>
+					<td class="user-name">Student name</td>
+					<td class="user-email">Email</td>
+					<td class="user-gender">Gender</td>
+					<td class="user-phone-number">Phone number</td>
+					<td class="user-password">Password</td>
+					<td class="user-collage">Collage</td>
+					<td class="user-course">Course</td>
+					<td class="user-address">Address</td>
+				</tr>
+			</thead>
+			<tbody id="students-list"></tbody>
+		</table>
+	</body>
 </html>
