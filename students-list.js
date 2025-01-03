@@ -6,7 +6,7 @@ students = [
 		course: "diploma",
 		collage: "kiet",
 		address: "brahmapuri",
-		phoneNumber: 7997543478,
+		phoneNumber: 5438790784,
 		password:"nani@123"
 	},
 	{
@@ -26,7 +26,7 @@ students = [
 		course: "inter",
 		collage: "ravi",
 		address: "brahmapuri",
-		phoneNumber: 9948113478,
+		phoneNumber: 9948313478,
 		password: "chinna@223",
 	},
 ];
@@ -37,7 +37,7 @@ students.push({
 	course: "inter",
 	collage: "aditya",
 	address: "brahmapuri",
-	phoneNumber: 9948113478,
+	phoneNumber: 9948413478,
 	password: "babby@223",
 });
 
