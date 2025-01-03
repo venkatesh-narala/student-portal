@@ -6,18 +6,8 @@ students = [
 		course: "diploma",
 		collage: "kiet",
 		address: "brahmapuri",
-		phoneNumber: 5438790784,
-		password:"nani@123"
-	},
-	{
-		name: "Chitti",
-		gender: "female",
-		email: "chitti66@gmail.com",
-		course: "10th class",
-		collage: "zpph school",
-		address: "brahmapuri",
-		phoneNumber: 7997548947,
-		password: "chitti@2233",
+		phoneNumber: "5438790784",
+		password: "nani@123",
 	},
 	{
 		name: "Chinna",
@@ -28,6 +18,16 @@ students = [
 		address: "brahmapuri",
 		phoneNumber: 9948313478,
 		password: "chinna@223",
+	},
+	{
+		name: "Chitti",
+		gender: "female",
+		email: "chitti66@gmail.com",
+		course: "10th class",
+		collage: "zpph school",
+		address: "brahmapuri",
+		phoneNumber: 7997548947,
+		password: "chitti@2233",
 	},
 ];
 students.push({
@@ -41,22 +41,51 @@ students.push({
 	password: "babby@223",
 });
 
-
 function displayStudentDetails(studentSerionNo) {
 	const studentIndex = studentSerionNo - 1;
 
 	const tableBody = document.getElementById("students-list");
 	const newRow = document.createElement("tr");
 	newRow.className = "table-data-row";
-	const serialNo=createTableRowCell(studentSerionNo,"serial-no");
-	const name=createTableRowCell(students[studentIndex].name,"user-name");
-	const email=createTableRowCell(students[studentIndex].email,"user-email");
-	const gender=createTableRowCell(students[studentIndex].gender,"user-gender");
-	const phoneNumber=createTableRowCell(students[studentIndex].phoneNumber,"user-phone-number");
-	const password=createTableRowCell(students[studentIndex].password,"user-password");
-	const collage=createTableRowCell(students[studentIndex].collage,"user-collage");
-	const course=createTableRowCell(students[studentIndex].course,"user-course");
-	const address = createTableRowCell(students[studentIndex].address, "user-address");
+	const serialNo = createTableRowCell(studentSerionNo, "serial-no");
+	const name = createTableRowCell(students[studentIndex].name, "user-name");
+	const email = createTableRowCell(students[studentIndex].email, "user-email");
+	const gender = createTableRowCell(
+		students[studentIndex].gender,
+		"user-gender"
+	);
+	const phoneNumber = createTableRowCell(
+		students[studentIndex].phoneNumber,
+		"user-phone-number"
+	);
+	const password = createTableRowCell(
+		students[studentIndex].password,
+		"user-password"
+	);
+	const collage = createTableRowCell(
+		students[studentIndex].collage,
+		"user-collage"
+	);
+	const course = createTableRowCell(
+		students[studentIndex].course,
+		"user-course"
+	);
+	const address = createTableRowCell(
+		students[studentIndex].address,
+		"user-address"
+	);
+
+	const viewDetails = document.createElement("td");
+	const button = document.createElement("button");
+	button.innerText = "Details";
+	button.className = "details-button";
+	viewDetails.appendChild(button);
+
+	button.addEventListener(`click`, () => {
+		let student = students[studentIndex];
+		localStorage.setItem("student", JSON.stringify(student));
+		window.location.href = `student-details.html`;
+	});
 
 	newRow.append(
 		serialNo,
@@ -67,7 +96,8 @@ function displayStudentDetails(studentSerionNo) {
 		password,
 		collage,
 		course,
-		address
+		address,
+		viewDetails
 	);
 	tableBody.append(newRow);
 }

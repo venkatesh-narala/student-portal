@@ -1,53 +1,58 @@
 body {
-    background-color:whitesmoke;
+	background-color: whitesmoke;
 }
 
 h1 {
-    text-align: center;
+	text-align: center;
 }
 
-.table-header-row, .table-data-row {
-    display: flex;
-    flex-direction: row;
-    font-size: 15px;
-    margin-bottom: 5px;
-    padding: 15px;
+.table-header-row,
+.table-data-row {
+	display: flex;
+	flex-direction: row;
+	font-size: 15px;
+	margin-bottom: 5px;
+	padding: 15px;
 }
 
 .table-header-row {
-    background-color: #3498db ;
+	background-color: #3498db;
 }
 
 .serial-no {
-    width: 50px;
+	width: 50px;
 }
-.user-name{
-    width: 90px;    
+.user-name {
+	width: 90px;
 }
-.user-email{
-    width: 200px;
-}
-
-.user-gender{
-    width: 70px;
+.user-email {
+	width: 200px;
 }
 
-.user-phone-number{
-    width: 110px;
+.user-gender {
+	width: 70px;
 }
 
-.user-password{
-    width: 120px;
+.user-phone-number {
+	width: 110px;
 }
 
-.user-collage{
-    width: 110px;
+.user-password {
+	width: 120px;
 }
 
-.user-course{
-    width: 120px;
+.user-collage {
+	width: 110px;
 }
 
-.user-address{
-    width: 150px;
+.user-course {
+	width: 120px;
+}
+
+.user-address {
+	width: 150px;
+}
+
+.details-button {
+	background-color: #3498db;
 }
